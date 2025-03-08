@@ -3,26 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <link rel="stylesheet" href="stylogin.css">
+    <title>NEURA</title>
 </head>
-<header>
-    <img src="images/Neura.png" alt="logo" height="200" width="200">
-</header>
 <body>
-    <table>
+    <div class="main-login">
+        <div class="left-login">
+            <h1>Bem vindo à <span>NEURA</span></h1>
+            <img src="images/left-image.png" class="left-login-image">
+        </div>
+        <div class="right-login">
+            <div class="card-login">
+                <h1>LOGIN</h1>
+                <div class="textfield">
+                    <label for="usuario">Usuário</label>
+                    <input id="mcpf" type="text" name="usuario" placeholder="Usuário">
+                </div>
+                <div class="textfield">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" placeholder="Senha">
+                </div>
+                <a href="novsenha.html"><b>Solicitar nova senha</b></a>
+                <button class="btn-login">Login</button>
+            </div>
+        </div>
+    </div>
 
-        <label>Bem vindo à NEURA</label>
-        <br>
-        <form id="form" method="post" action=".php">
-            <label for="name">CPF</label>
-            <input id="mcpf" type="input" name="cpf">
-            <br>
-            <label for="name">SENHA</label>
-            <input id="msenha" type="password" name="senha" autocomplete="off">
-        </form>
-        <br>
-        <label src="novsenha.html"><b>Solicitar nova senha</b></label>
-    </table>
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
     <script>
