@@ -1,8 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+header{
+    padding: 1px 8%;
+    background-color: #C4C1D9;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #5c5c5c; /* MUDAR COR DE A CORDO COM O TEMA */
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
 body{
     margin: 0;
     font-family: "Noto Sans", sans-serif;
+    background-color: #201b2c;
 }
 
 body * {
@@ -11,8 +44,8 @@ body * {
 
 .main-login{
     width: 100vw;
-    height: 100vh;
-    background: #201b2c; /* MUDAR COR DE ACORDO COM O TEMA !!! */
+    height: 80vh;
+    background: rgb(151, 151, 196); /* MUDAR COR DE ACORDO COM O TEMA !!! */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,7 +53,7 @@ body * {
 
 .left-login{
     width: 50vw;
-    height: 100vh;
+    height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,7 +61,7 @@ body * {
 }
 
 .left-login > h1{
-    font-size: 3vw;
+    font-size: 2vw;
     color: #77ffc0; /* MUDAR COR DE ACORDO COM O TEMA !!! */
 }
 
@@ -37,17 +70,17 @@ body * {
 }
 
 .left-login-image{
-    width: 35vw
-    
+    border-radius: 25px;
 }
 
 .left-login img{
-    border-radius: 25px;
+    height: 80vh;
+    width: 50vh;
 }
 
 .right-login{
     width: 50vw;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,9 +167,16 @@ body * {
     .main-login{
         flex-direction: column;
     }
-
+    header{
+        align-items: right;
+    }
     .left-login > h1{
         display: none;
+    }
+
+    .left-login > img{
+        display: none;
+        width: 100%;
     }
 
     .left-login{
