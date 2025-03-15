@@ -18,6 +18,11 @@ header a{
     transition: .2s;
 }
 
+.logo-login-image{
+    height: 80px;
+    width: 90px;
+}
+
 header a:hover{
     color: #fff;
     transform: scale(1.05);
@@ -32,20 +37,37 @@ header nav ul li{
     padding: 0 40px;
 }
 
+html, body{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
 body{
     margin: 0;
     font-family: "Noto Sans", sans-serif;
-    background-color: #201b2c;
+    background-color: #fff;
 }
 
 body * {
     box-sizing: border-box;
 }
 
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #c4c1d9;
+    padding: 25px 0px;
+    text-align: center;
+}
+
 .main-login{
     width: 100vw;
-    height: 80vh;
-    background: rgb(151, 151, 196); /* MUDAR COR DE ACORDO COM O TEMA !!! */
+    height: 79vh;
+    background: #fff; /* rgb(151, 151, 196); /* MUDAR COR DE ACORDO COM O TEMA !!! */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,11 +84,11 @@ body * {
 
 .left-login > h1{
     font-size: 2vw;
-    color: #77ffc0; /* MUDAR COR DE ACORDO COM O TEMA !!! */
+    color: #0d0d0d; /* MUDAR COR DE ACORDO COM O TEMA !!! */
 }
 
 .left-login span{
-    color: #982835; /* MUDAR COR DE ACORDO COM O TEMA !!! */
+    color: #0d0d0d; /* MUDAR COR DE ACORDO COM O TEMA !!! */
 }
 
 .left-login-image{
@@ -74,13 +96,13 @@ body * {
 }
 
 .left-login img{
-    height: 80vh;
+    height: 60vh;
     width: 50vh;
 }
 
 .right-login{
+    height: 60vh;
     width: 50vw;
-    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,21 +115,22 @@ body * {
     align-items: center;
     flex-direction: column;
     padding: 30px 35px;
-    background: #2f2841; /* MUDAR COR DE ACORDO COM O TEMA !!! */
+    background: #c4c1d9; /* MUDAR COR DE ACORDO COM O TEMA !!! */
     border-radius: 20px;
-    box-shadow: 0px 10px 40px #00000056; /* MUDAR COR DE ACORDO COM O TEMA !!! */
+    box-shadow: 0px 1px 10px #9592a5; /* MUDAR COR DE ACORDO COM O TEMA !!! */
 }
 
 .card-login > h1{
-    color: #00ff88; /* MUDAR COR DE ACORDO COM O TEMA !!! */
+    color: #0d0d0d; /* MUDAR COR DE ACORDO COM O TEMA !!! */
     font-weight: 800;
     margin: 0;
 }
 
 .card-login a {
-    color: rgb(0, 191, 255);
+    color: #553eec;
     font-size: 15px;
     text-decoration: none;
+    
 }
 
 .textfield{
@@ -124,8 +147,8 @@ body * {
     border: none;
     border-radius: 10px;
     padding: 15px;
-    background: #514869; /* MUDAR COR DE ACORDO COM O TEMA !!! */
-    color: #f0ffffde; /* MUDAR COR DE ACORDO COM O TEMA !!! */
+    background: #fff; /* MUDAR COR DE ACORDO COM O TEMA !!! */
+    color: #0d0d0d; /* MUDAR COR DE ACORDO COM O TEMA !!! */
     font-size: 12pt;
     box-shadow: 0px 10px 40px #00000056; /* MUDAR COR DE ACORDO COM O TEMA !!! */
     outline: none;
@@ -133,7 +156,7 @@ body * {
 }
 
 .textfield > label{
-    color: #f0ffffde; /* MUDAR COR DE ACORDO COM O TEMA !!! */
+    color: #0d0d0d; /* MUDAR COR DE ACORDO COM O TEMA !!! */
     margin-bottom: 10px;
 }
 
@@ -152,9 +175,9 @@ body * {
     font-weight: 800;
     letter-spacing: 3px;
     color: #2b134b; /* MUDAR COR DE ACORDO COM O TEMA !!! */
-    background: #00ff88 ; /* MUDAR COR DE ACORDO COM O TEMA !!! */
+    background: #dddce2 ; /* MUDAR COR DE ACORDO COM O TEMA !!! */
     cursor: pointer;
-    box-shadow: 0px 10px 40px -12px #00ff8052; /* MUDAR COR DE ACORDO COM O TEMA !!! */
+    box-shadow: 0px 10px 40px -12px #59585652; /* MUDAR COR DE ACORDO COM O TEMA !!! */
 }
 
 @media only screen and (max-width: 950px){
