@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+header {
+    padding: 1px 8%;
+    background-color: #8c8784;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+.logo-home-image {
+    height: 80px;
+    width: 90px;
+    filter: brightness(100);
+}
+
+header a:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.btn-sair button{
+    padding: 15px 13px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #fff;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    margin: 0;
+    background-color: #F2ECE9;
+    font-family: "Noto Sans", sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.main-body {
+    display: flex;
+    flex-grow: 1;
+    Justify-content: space-between;
+    align-items: center;
+    padding: 11px 1% 1%;
+    gap: 20px;
+}
+
+.left-body {
+    height: 100%;
+    width: 25vw;
+    border-radius: 7px;
+    background-color: red;
+}
+
+.card-info {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #fff;
+}
+
+.right-body {
+    height: 100%;
+    width: calc(75vw - 20px);
+    border-radius: 7px;
+    background-color: green;
+}
+
+.notification-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.circle {
+    height: 50px;
+    width: 50px;
+    background-color: #FF4D4D;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.circle:hover {
+    transform: scale(1.1);
+}
+
+.notification {
+    background-color: #FF4D4D;
+}
+
+.pending {
+    background-color: #FFAA33;
+}
